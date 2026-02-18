@@ -19,5 +19,13 @@
 	{% if prediction %}
 		<h3>{{ prediction }}</h3>
 	{% endif %}
+
+	<h3>Analysis Plots</h3>
+	<div>
+		<img src="{{ url_for('static', filename='images/churn_distribution.png') }}" alt="Churn distribution" style="max-width:600px; height:auto;">
+	</div>
+	<div>
+		<img src="{{ url_for('static', filename='images/corr_heatmap.png') }}" alt="Correlation heatmap" style="max-width:800px; height:auto;">
+	</div>
 </body>
 </html>
